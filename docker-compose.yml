@@ -11,11 +11,11 @@ services:
           - .:/myapp
         ports:
           - "3000:3000"
-        depends_on:
-          - mysql
 
     postgres:
         image: postgres
+        environment:
+          POSTGRES_PASSWORD: example
 
     mysql:
         image: mysql
