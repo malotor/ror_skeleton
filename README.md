@@ -9,6 +9,8 @@ Starting project for working with:
 - Docker
 
 ## Start
+
+    # Build docker images
     
     docker-compose build
     
@@ -19,11 +21,12 @@ Starting project for working with:
     # Up the server
     
     docker-compose up web postgres
-    
+
+    # Let´s go
 
     curl localhost:3000/
     
-## Command
+## Commands
 
     docker-compose exec web bundle exec rake db:migrate
     docker-compose -p tests run -p 3000 --rm web bundle exec rspec
